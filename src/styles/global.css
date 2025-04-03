@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* fondo en diagonal */
+.clip-diagonal{
+    /* 
+    primer valor = eje x
+    segundo valor = eje y
+    */
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+}
+/* fondo en diagonal para celular */
+.clip-diagonal{
+    @media (max-width: 940px) {
+    /* 
+        primer valor = eje x
+        segundo valor = eje y
+    */
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+    }
+}
+body{
+    @media (max-width: 940px) {
+        width: 100%;
+    }
+}
+
+
+/* card 1 */
+.card1 p{
+    @media (max-width: 940px) {
+        font-size: 14.4px;
+    }
+}
+/* img de la primera card */
+.img-portada{
+    @media (max-width: 940px) {
+        width: 50%;
+    }
+}
+
+.card2 ul, li{
+    font-size: 20px;
+}
+/* img segunda card */
+.img-card2{
+    @media (max-width: 940px) {
+        width: 50%;
+        margin-left: -10px;
+    }
+}
